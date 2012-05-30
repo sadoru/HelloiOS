@@ -10,8 +10,8 @@
 
 @interface HWAppDelegate : UIResponder <UIApplicationDelegate>
 {
-    UIViewController *viewController1;
-    UIViewController *viewController2;
+    UIWindow *window;
+    UIViewController *rootController;
 }
 
 @property (strong, nonatomic) UIWindow *window;

@@ -14,30 +14,33 @@
 
 @synthesize window = _window;
 
-- (void)dealloc
-{
-    [_window release];
-    [super dealloc];
-}
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
 
-    // Hello, World!
-    viewController1 = [[ViewController1 alloc] init];
-    viewController2 = [[ViewController2 alloc] init];
+    // 基点となるController = TabbarControllerインスタンスを作成
+    rootController = [[UITabBarController alloc] init];
     
-    [self.window addSubview:viewController1.view];
-    [self.window addSubview:viewController2.view];
+    ViewController1 *tab1 = [[[ViewController1 alloc] init] autorelease];
+    ViewController2 *tab2 = [[[ViewController2 alloc] init] autorelease];
 
+    // 作ったViewControllerをControllerへまとめて追加
+    NSArray *controllers = [NSArray arrayWithObjects:tab1, tab2, nil];
+    [(UITabBarController*)rootController setViewControllers:controllers animated:NO];
+    
+    // windowにControllerのviewを追加
+    [self.window addSubview:rootController.view];
+    
     [self.window makeKeyAndVisible];
-    
-    // viewController1を前面に出す
-    [self.window bringSubviewToFront:viewController1.view];
-    
+        
     return YES;
+}
+
+- (void)dealloc
+{
+    [rootController release];
+    [_window release];
+    [super dealloc];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

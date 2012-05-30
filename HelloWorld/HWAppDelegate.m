@@ -7,8 +7,7 @@
 //
 
 #import "HWAppDelegate.h"
-#import "ViewController1.h"
-#import "ViewController2.h"
+#import "TopMenuController.h"
 
 @implementation HWAppDelegate
 
@@ -19,15 +18,9 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
 
     // 基点となるController = TabbarControllerインスタンスを作成
-    rootController = [[UITabBarController alloc] init];
-    
-    ViewController1 *tab1 = [[[ViewController1 alloc] init] autorelease];
-    ViewController2 *tab2 = [[[ViewController2 alloc] init] autorelease];
-
-    // 作ったViewControllerをControllerへまとめて追加
-    NSArray *controllers = [NSArray arrayWithObjects:tab1, tab2, nil];
-    [(UITabBarController*)rootController setViewControllers:controllers animated:NO];
-    
+    TopMenuController *topMenu = [[[TopMenuController alloc] initWithStyle:UITableViewStylePlain] autorelease];
+    rootController = [[UINavigationController alloc] initWithRootViewController:topMenu];
+        
     // windowにControllerのviewを追加
     [self.window addSubview:rootController.view];
     

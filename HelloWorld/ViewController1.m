@@ -16,7 +16,8 @@
 
 - (id)init
 {
-    if ((self = [super init])) {
+    self = [super init];
+    if (self) {
         // tabBar用設定
         self.title = @"Hello";
         self.tabBarItem = [[[UITabBarItem alloc] initWithTitle:@"こんにちは" image:nil tag:0]  autorelease];

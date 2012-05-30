@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20067B87157668F10005A718 /* TopMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20067B86157668F10005A718 /* TopMenuController.m */; };
 		20450EAD1574F94E00660B92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20450EAC1574F94E00660B92 /* UIKit.framework */; };
 		20450EAF1574F94E00660B92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20450EAE1574F94E00660B92 /* Foundation.framework */; };
 		20450EB11574F94E00660B92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20450EB01574F94E00660B92 /* CoreGraphics.framework */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20067B85157668F10005A718 /* TopMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopMenuController.h; sourceTree = "<group>"; };
+		20067B86157668F10005A718 /* TopMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopMenuController.m; sourceTree = "<group>"; };
 		20450EA81574F94E00660B92 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20450EAC1574F94E00660B92 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		20450EAE1574F94E00660B92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,6 +83,8 @@
 			children = (
 				20450EBB1574F94E00660B92 /* HWAppDelegate.h */,
 				20450EBC1574F94E00660B92 /* HWAppDelegate.m */,
+				20067B85157668F10005A718 /* TopMenuController.h */,
+				20067B86157668F10005A718 /* TopMenuController.m */,
 				20A7262D15764AD100BE67B5 /* ViewController1.h */,
 				20A7262E15764AD100BE67B5 /* ViewController1.m */,
 				20A7263115764AE400BE67B5 /* ViewController2.h */,
@@ -166,6 +171,7 @@
 				20450EBD1574F94E00660B92 /* HWAppDelegate.m in Sources */,
 				20A7262F15764AD100BE67B5 /* ViewController1.m in Sources */,
 				20A7263315764AE400BE67B5 /* ViewController2.m in Sources */,
+				20067B87157668F10005A718 /* TopMenuController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

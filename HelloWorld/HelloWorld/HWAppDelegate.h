@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface HWAppDelegate : UIResponder <UIApplicationDelegate>
+{
+    UIViewController *viewController1;
+    UIViewController *viewController2;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

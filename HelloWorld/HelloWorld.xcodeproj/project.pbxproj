@@ -13,6 +13,8 @@
 		20450EB71574F94E00660B92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20450EB51574F94E00660B92 /* InfoPlist.strings */; };
 		20450EB91574F94E00660B92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20450EB81574F94E00660B92 /* main.m */; };
 		20450EBD1574F94E00660B92 /* HWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20450EBC1574F94E00660B92 /* HWAppDelegate.m */; };
+		20A7262F15764AD100BE67B5 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A7262E15764AD100BE67B5 /* ViewController1.m */; };
+		20A7263315764AE400BE67B5 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A7263215764AE400BE67B5 /* ViewController2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		20450EBA1574F94E00660B92 /* HelloWorld-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Prefix.pch"; sourceTree = "<group>"; };
 		20450EBB1574F94E00660B92 /* HWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWAppDelegate.h; sourceTree = "<group>"; };
 		20450EBC1574F94E00660B92 /* HWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWAppDelegate.m; sourceTree = "<group>"; };
+		20A7262D15764AD100BE67B5 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		20A7262E15764AD100BE67B5 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		20A7263115764AE400BE67B5 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		20A7263215764AE400BE67B5 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,10 @@
 			children = (
 				20450EBB1574F94E00660B92 /* HWAppDelegate.h */,
 				20450EBC1574F94E00660B92 /* HWAppDelegate.m */,
+				20A7262D15764AD100BE67B5 /* ViewController1.h */,
+				20A7262E15764AD100BE67B5 /* ViewController1.m */,
+				20A7263115764AE400BE67B5 /* ViewController2.h */,
+				20A7263215764AE400BE67B5 /* ViewController2.m */,
 				20450EB31574F94E00660B92 /* Supporting Files */,
 			);
 			path = HelloWorld;
@@ -154,6 +164,8 @@
 			files = (
 				20450EB91574F94E00660B92 /* main.m in Sources */,
 				20450EBD1574F94E00660B92 /* HWAppDelegate.m in Sources */,
+				20A7262F15764AD100BE67B5 /* ViewController1.m in Sources */,
+				20A7263315764AE400BE67B5 /* ViewController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +267,7 @@
 				20450EC21574F94E00660B92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

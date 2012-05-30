@@ -7,6 +7,8 @@
 //
 
 #import "HWAppDelegate.h"
+#import "ViewController1.h"
+#import "ViewController2.h"
 
 @implementation HWAppDelegate
 
@@ -24,13 +26,17 @@
     // Override point for customization after application launch.
 
     // Hello, World!
-    CGRect rect = [self.window frame];
-    UILabel *label = [[[UILabel alloc] initWithFrame:rect] autorelease];
-    label.text = @"Hello, World!";
+    viewController1 = [[ViewController1 alloc] init];
+    viewController2 = [[ViewController2 alloc] init];
     
-    [self.window addSubview:label];
+    [self.window addSubview:viewController1.view];
+    [self.window addSubview:viewController2.view];
 
     [self.window makeKeyAndVisible];
+    
+    // viewController1を前面に出す
+    [self.window bringSubviewToFront:viewController1.view];
+    
     return YES;
 }
 

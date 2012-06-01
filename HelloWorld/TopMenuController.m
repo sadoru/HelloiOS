@@ -77,9 +77,11 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (!cell) {
-        // セルの型がß登録済みでないなら新しく登録する
-        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero
-                                       reuseIdentifier:CellIdentifier] autorelease];
+        // セルの型が登録済みでないなら新しく登録する
+        NSLog(@"%s, row:%d", __func__, indexPath.row);
+//        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero
+//                                       reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
     // セルのラベルに表示するテキストを設定
@@ -140,7 +142,7 @@
      [detailViewController release];
      */
     
-    NSLog(@"row:%d", indexPath.row);
+    NSLog(@"%s, row:%d", __func__, indexPath.row);
 
     // セルから遷移先画面のクラス名をそのまま取込み、生成
     Class class = NSClassFromString([items objectAtIndex:indexPath.row]);
